@@ -3,79 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kreativ Dasturchi Blogi</title>
+    <title>Mening Portfoliom | Dasturchi</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <div class="bg-shape shape1"></div>
-    <div class="bg-shape shape2"></div>
-
-    <header>
-        <div class="glass-nav">
+    <!-- Navigatsiya paneli -->
+    <nav class="navbar">
+        <div class="container">
             <div class="logo">PORT<span>FOLIO</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Loyiha</a></li>
-                    <li><a href="#" class="contact-btn">Bog'lanish</a></li>
-                </ul>
-            </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Asosiy</a></li>
+                <li><a href="#about">Men haqimda</a></li>
+                <li><a href="#skills">Texnologiyalar</a></li>
+                <li><a href="#projects">Loyihalar</a></li>
+                <li><a href="#contact" class="btn-nav">Bog'lanish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Kirish qismi) -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="greeting">Salom, mening ismim</span>
+                <h1>Azizbek <span>Dasturchi</span></h1>
+                <p>Men zamonaviy veb-ilova va kreativ dizaynlar yaratuvchi Frontend dasturchiman. Kod yozish orqali g'oyalarni haqiqatga aylantiraman.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">Loyihalarni ko'rish</a>
+                    <a href="#contact" class="btn secondary">Suhbatlashamiz</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="wrapper">
-        <section class="welcome-section">
-            <h1 class="gradient-text">Fikrlarim va Kodlarim Olami</h1>
-            <p>Men kreativlikni kod bilan birlashtiraman.</p>
-        </section>
-
-        <div class="grid-container">
-            
-            <article class="card">
-                <div class="card-img img-1"></div>
-                <div class="card-info">
-                    <span class="tag">Dizayn</span>
-                    <h3>UI/UX sirlari</h3>
-                    <p>Nega ba'zi saytlar juda chiroyli ko'rinadi? Ranglar psixologiyasi haqida.</p>
-                    <div class="card-footer">
-                        <span>5 mart, 2026</span>
-                        <a href="#">O'qish →</a>
-                    </div>
+    <!-- Men haqimda qismi -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Men haqimda</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Men dasturlash olamiga 2 yil oldin kirib kelganman. Har bir yozgan kodimda aniqlik va go'zallikka intilaman.</p>
+                    <p>Hozirda maktabda o'qish bilan birga mustaqil ravishda yangi texnologiyalarni o'rganib kelmoqdaman.</p>
+                    <ul class="personal-info">
+                        <li><strong>Yosh:</strong> 27 yosh</li>
+                        <li><strong>Shahar:</strong> Samarqabd</li>
+                        <li><strong>Daraja:</strong> FullStack Developer</li>
+                    </ul>
                 </div>
-            </article>
-
-            <article class="card featured">
-                <div class="card-img img-2"></div>
-                <div class="card-info">
-                    <span class="tag">Koding</span>
-                    <h3>JavaScript-da 3D dunyo</h3>
-                    <p>Veb-saytlarda uch o'lchamli grafika yaratish endi juda osonlashdi.</p>
-                    <div class="card-footer">
-                        <span>3 mart, 2026</span>
-                        <a href="#">O'qish →</a>
-                    </div>
+                <div class="about-visual">
+                    <!-- Bu yerda o'quvchi o'z rasmini qo'yishi mumkin -->
+                    <div class="profile-frame"></div>
                 </div>
-            </article>
-
-            <article class="card">
-                <div class="card-img img-3"></div>
-                <div class="card-info">
-                    <span class="tag">AI</span>
-                    <h3>Sun'iy intellekt davri</h3>
-                    <p>AI bizning ishimizni qanchalik o'zgartiradi? Kelajakka nazar.</p>
-                    <div class="card-footer">
-                        <span>1 mart, 2026</span>
-                        <a href="#">O'qish →</a>
-                    </div>
-                </div>
-            </article>
-
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <p>Created with ✨ by My Students</p>
+    <!-- Texnologiyalar qismi -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Texnologiyalar</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">HTML5</div>
+                    <h3>Struktura</h3>
+                    <p>Semantik va toza kod yozish.</p>
+                </div>
+                <div class="skill-card active">
+                    <div class="icon">CSS3</div>
+                    <h3>Dizayn</h3>
+                    <p>Flexbox, Grid va murakkab animatsiyalar.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">JavaScript</div>
+                    <h3>Mantiq</h3>
+                    <p>Interaktivlik va dinamik funksiyalar.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">GitHub</div>
+                    <h3>Versiya</h3>
+                    <p>Jamoada ishlash va kodlarni boshqarish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyihalar qismi -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mening loyihalarim</h2>
+            <div class="projects-grid">
+                
+                <div class="project-item">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Online Do'kon</h3>
+                        <p>Kiyim-kechaklar sotish uchun mo'ljallangan veb-sayt.</p>
+                        <a href="#">Ko'rish</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Ob-havo ilovasi</h3>
+                        <p>Real vaqtdagi ob-havoni ko'rsatuvchi sodda interfeys.</p>
+                        <a href="#">Ko'rish</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Shaxsiy Blog</h3>
+                        <p>O'z fikrlarimni yozib borish uchun minimalist platforma.</p>
+                        <a href="#">Ko'rish</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>Siz bilan hamkorlik qilishga tayyorman!</p>
+            <div class="socials">
+                <a href="#">Telegram</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2026 Barcha huquqlar himoyalangan.</p>
+        </div>
     </footer>
 
 </body>
