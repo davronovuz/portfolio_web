@@ -1,0 +1,144 @@
+/* --- ASOSIY SOZLAMALAR --- */
+:root {
+    --bg: #0f0c29; /* To'q binafsha-qora fon */
+    --accent: #ff00cc; /* Neon pushti */
+    --gold: #fdfc47; /* Neon sariq */
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* --- FONDA HARAKATLANUVCHI SHAKLLAR --- */
+.bg-shape {
+    position: absolute;
+    z-index: -1;
+    filter: blur(80px);
+    border-radius: 50%;
+}
+.shape1 {
+    width: 300px; height: 300px;
+    background: var(--accent);
+    top: -100px; right: -50px;
+}
+.shape2 {
+    width: 400px; height: 400px;
+    background: #3333ff;
+    bottom: -100px; left: -100px;
+}
+
+/* --- GLASSMORPHISM NAV --- */
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: var(--glass);
+    backdrop-filter: blur(15px); /* Oyna effekti */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo span { color: var(--accent); }
+
+nav ul { display: flex; list-style: none; gap: 30px; }
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-btn {
+    background: white;
+    color: var(--bg) !important;
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+/* --- WELCOME SECTION --- */
+.welcome-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.gradient-text {
+    font-size: 55px;
+    background: linear-gradient(to right, var(--accent), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Faqat gradient ko'rinadi */
+}
+
+/* --- GRID SYSTEM --- */
+.wrapper { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Avtomatik moslashuv */
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* --- KREATIV KARTOCHKA --- */
+.card {
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(255, 0, 204, 0.2);
+}
+
+.card-img {
+    height: 200px;
+    background: linear-gradient(45deg, #222, #444);
+}
+
+/* Rasm o'rniga turli rangli gradientlar */
+.img-1 { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+.img-2 { background: linear-gradient(45deg, #a18cd1, #fbc2eb); }
+.img-3 { background: linear-gradient(45deg, #84fab0, #8fd3f4); }
+
+.card-info { padding: 25px; }
+
+.tag {
+    background: var(--accent);
+    font-size: 10px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.card-info h3 { margin: 15px 0 10px; font-size: 22px; }
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.card-footer a { color: var(--gold); text-decoration: none; font-weight: bold; }
+
+footer { text-align: center; padding: 50px; opacity: 0.6; }
